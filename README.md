@@ -1,2 +1,3 @@
-# start-cmake-project
+# Starter CMake Project
+
 Template repository for CMake projects
