@@ -20,7 +20,7 @@ target_link_libraries(test gtest_main)
 
 # Add the app executable
 add_executable(start_cmake_project ${SOURCES})
-target_link_libraries(start_cmake_project ${Example_LIBRARIES})
+target_link_libraries(start_cmake_project PRIVATE ${Example_LIBRARIES})
 target_include_directories(start_cmake_project PRIVATE include)
 target_link_directories(start_cmake_project PRIVATE ${Example_LIBRARY_DIRS})
 target_compile_definitions(start_cmake_project PRIVATE ${Example_DEFINITIONS})
